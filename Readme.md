@@ -1,0 +1,1 @@
+[![Build FastAPI Project](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml/badge.svg)](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml)
