@@ -1,0 +1,28 @@
+name: Build FastAPI Project
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository content
+        uses: actions/checkout@v2 # Checkout the repository content to github runner.
+      - name: Setup Python Version
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.12 # Install the python version needed
+
+      - name: Install dependencies
+        run: |
+          make install
+
+      # - name: Apply Lint with pylint
+      #   run: |
+      #     make lint
+      # - name: Run test
+      #   run: |
+      #     make test
+
+      # - name: Apply Lint with pylint
+      #   run: |
+      #     make lint
+    
