@@ -25,4 +25,7 @@ jobs:
       - name: Apply Lint with pylint
         run: |
           make lint
+      - name: Build container
+        run: |
+          make build
     
