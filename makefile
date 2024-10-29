@@ -21,4 +21,9 @@ run:
 	docker run -d -p 8080:8080 b167b5101ba5
 deploy:
 	#deploy
-all: install lint test deploy
+	aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 766350019609.dkr.ecr.eu-west-2.amazonaws.com
+	docker build -t fastapi
+	docker tag fastapi:latest 766350019609.dkr.ecr.eu-west-2.amazonaws.com/fastapi:latest
+	docker push 766350019609.dkr.ecr.eu-west-2.amazonaws.com/fastapi:latest
+    
+all: install format lint test deploy
