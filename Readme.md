@@ -1,1 +1,1 @@
-[![Build FastAPI Project](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml/badge.svg)](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml)
+[![Build FastAPI Project](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml/badge.svg)](https://github.com/Samueltommzy/fastAPI-microservice/actions/workflows/build.yml)[![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/pylint-dev/pylint)

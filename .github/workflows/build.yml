@@ -14,15 +14,15 @@ jobs:
       - name: Install dependencies
         run: |
           make install
+      
+      - name: Apply format with black
+        run: |
+          make format
+      - name: Run test
+        run: |
+          make test
 
-      # - name: Apply Lint with pylint
-      #   run: |
-      #     make lint
-      # - name: Run test
-      #   run: |
-      #     make test
-
-      # - name: Apply Lint with pylint
-      #   run: |
-      #     make lint
+      - name: Apply Lint with pylint
+        run: |
+          make lint
     
